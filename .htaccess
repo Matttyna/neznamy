@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{HTTP_HOST}%{REQUEST_URI}   ^(www\.)?webmio.cz/beta/(.*)
+
+RewriteRule  (.*)  http://beta.webmio.cz/%1  [R=301,L]
+
+RewriteRule ^([a-zA-Z0-9\\-]*)/$ /zasportuj/index\.php?lvl1=$1 [QSA,L]
+#RewriteRule ^([a-zA-Z0-9\\-]*)/([a-zA-Z0-9\\-]*)/([a-zA-Z0-9\\-]*)$ /zasportuj/index\.php?lng=$1&lvl1=$2&lvl2=$3 [QSA,L]
+#RewriteRule ^([a-zA-Z0-9\\-]*)/([a-zA-Z0-9\\-]*)/([a-zA-Z0-9\\-]*)/([a-zA-Z0-9\\-]*)$ /zasportuj/index\.php?lng=$1&lvl1=$2&lvl=$3&lvl=$4 [QSA,L]
+
+ErrorDocument 404 /404.php
