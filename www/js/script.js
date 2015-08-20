@@ -61,12 +61,25 @@
     });
     /*Sidebar 100%*/
     $(function() {
-    $('#content').find('#sidebar').css('height', $('#content').height());
+      //if ($("#content").height > $("#sidebar").height){
+         $('#content').find('#sidebar').css('height', $('#content').height());
+      //}
+    
     
     /*Sidebar detail accordion*/
         $(function() {
-            $( "#accordion" ).accordion();
-            $( "#accordion_search" ).accordion();
+            $( "#accordion" ).accordion({
+               collapsible: true
+               });
+            $( "#accordion_search" ).accordion({
+               collapsible: true
+               });
+            $( "#prices" ).accordion({
+               collapsible: true
+               });
+            $( "#opening" ).accordion({
+               collapsible: true
+               });
             $( "#tabs" ).tabs();
             $( "#comments_others" ).tabs();
         });

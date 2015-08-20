@@ -65,7 +65,7 @@
 }
 
 /*Widths*/
-@container_width:1110px;
+@container_width:960px;
 body,.btn{
     font-family: 'Roboto', sans-serif;
     font-weight:300;
@@ -80,7 +80,7 @@ body,html{
 
 h1{
    font-family: 'Impact';
-   font-size: 48px;    
+   font-size: 44px;    
 }
 
 h2,h3,h4,h5{
@@ -91,16 +91,16 @@ h2,h3,h4,h5{
 }
 
 h2{
-    font-size:40px;
-}
-h3,.span-36{
     font-size:36px;
 }
+h3,.span-36{
+    font-size:32px;
+}
 h4,.span-30{
-    font-size:30px;
+    font-size:26px;
 }
 h5,.span-24{
-    font-size:24px;
+    font-size:20px;
 }
 
 span,p,input,.span-18{
@@ -180,6 +180,11 @@ input{
                 display: block;
             }
         }
+    }
+    #address{
+      input[type="checkbox"]{
+	height: auto;
+      }
     }
 }
 
@@ -554,7 +559,7 @@ input{
                         bottom:20px;
                         position: absolute;
                         left:20px;
-                        .span-36;
+                        .span-24;
                         color: white;
                     }
                     img{
@@ -614,7 +619,7 @@ input{
 	    width:100%;
 	    border-top-right-radius:8px;
 	}
-#prices,#address{
+#prices,#address,#opening{
 
 	   li{
 	    
@@ -623,7 +628,7 @@ input{
 		    padding:10px!important;
 		    padding-left:25px!important;
 		    box-sizing: border-box;
-		    .gradient_img('images/icons/caret-right.png');
+		    .gradient_img('../images/icons/caret-right.png');
 		    width:100%;
 		    display: block;
 		    border-top:1px solid @light_grey;
@@ -631,7 +636,7 @@ input{
 		    text-align: left;
 		    
 		    &:hover{
-			.gradient_img('images/icons/caret-down.png');
+			.gradient_img('../images/icons/caret-down.png');
 			cursor: pointer;
 		    }
 		}
@@ -652,6 +657,9 @@ input{
 		.ui-state-default,.ui-accordion-content{
 			background: white;
 		}	
+	    }
+	    .ui-accordion-content{
+	      padding:10px;
 	    }
 	}
 
