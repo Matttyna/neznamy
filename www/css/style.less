@@ -69,6 +69,7 @@
 body,.btn{
     font-family: 'Roboto', sans-serif;
     font-weight:300;
+    font-size: 0.9em;
 
 }
 body,html{
@@ -670,9 +671,9 @@ input{
         width:100%;
     }
     #sidebar{
-	border-left:1px solid @light_grey;
-	border-right: 0px;
 	.small();
+	border-left:1px;
+	border-right: 0px;
 	
 	#opening span, #prices span{
 	    text-transform: uppercase;
@@ -720,6 +721,17 @@ input{
 	}
 	#content_w_sidebar{
 	    padding:0px 40px;
+	    position: relative;
+	    
+	    &:before{
+	      content: "";
+	      border-left:1px solid @light_grey;
+	      height: 100%;
+	      position: absolute;
+	      right:-1px;
+	      top:0;
+	    }
+	  
 	    
 	    #about{
 		.clearfix();
@@ -915,6 +927,7 @@ input{
     }
     #sidebar{
 	width:30%;
+	
 	#map{
 	    border-radius: 0px;
 	    border-top-left-radius: 8px;
@@ -928,6 +941,16 @@ input{
     }
     #content_w_sidebar{
 	width:70%;
+	position: relative;
+	    
+	    &:before{
+	      content: "";
+	      border-left:1px solid @light_grey;
+	      height: 100%;
+	      position: absolute;
+	      left:-1px;
+	      top:0;
+	    }
 	
 	.item_search{
 	    padding:40px;

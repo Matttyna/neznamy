@@ -47,6 +47,7 @@ body,
 .btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 0.9em;
 }
 body,
 html {
@@ -759,9 +760,9 @@ input {
   width: 100%;
 }
 #detail #sidebar {
-  border-left: 1px solid #c3c3c3;
-  border-right: 0px;
   font-size: 14px;
+  border-left: 1px;
+  border-right: 0px;
 }
 #detail #sidebar #opening span,
 #detail #sidebar #prices span {
@@ -803,6 +804,15 @@ input {
 }
 #detail #content .container #content_w_sidebar {
   padding: 0px 40px;
+  position: relative;
+}
+#detail #content .container #content_w_sidebar:before {
+  content: "";
+  border-left: 1px solid #c3c3c3;
+  height: 100%;
+  position: absolute;
+  right: -1px;
+  top: 0;
 }
 #detail #content .container #content_w_sidebar #about {
   zoom: 1;
@@ -1024,6 +1034,15 @@ input {
 }
 #search #content_w_sidebar {
   width: 70%;
+  position: relative;
+}
+#search #content_w_sidebar:before {
+  content: "";
+  border-left: 1px solid #c3c3c3;
+  height: 100%;
+  position: absolute;
+  left: -1px;
+  top: 0;
 }
 #search #content_w_sidebar .item_search {
   padding: 40px;

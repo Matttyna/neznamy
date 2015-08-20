@@ -62,7 +62,7 @@
     /*Sidebar 100%*/
     $(function() {
       //if ($("#content").height > $("#sidebar").height){
-         $('#content').find('#sidebar').css('height', $('#content').height());
+         //$('#content').find('#sidebar').css('height', $('#content').height());
       //}
     
     
