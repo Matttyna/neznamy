@@ -74,12 +74,10 @@
             $( "#accordion_search" ).accordion({
                collapsible: true
                });
-            $( "#prices" ).accordion({
+            $( "#opening_times" ).accordion({
                collapsible: true
                });
-            $( "#opening" ).accordion({
-               collapsible: true
-               });
+           
             $( "#tabs" ).tabs();
             $( "#comments_others" ).tabs();
         });

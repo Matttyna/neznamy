@@ -763,6 +763,7 @@ input {
   font-size: 14px;
   border-left: 1px;
   border-right: 0px;
+  z-index: 5;
 }
 #detail #sidebar #opening span,
 #detail #sidebar #prices span {
@@ -813,6 +814,7 @@ input {
   position: absolute;
   right: -1px;
   top: 0;
+  z-index: 20;
 }
 #detail #content .container #content_w_sidebar #about {
   zoom: 1;
